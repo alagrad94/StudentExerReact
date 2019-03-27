@@ -43,7 +43,7 @@ export default class StudentExercises extends Component {
     APIManager.connectToData({dataSet: 'students', fetchType: 'GET', embedItem: `?q=${this.state.jsonQuery}`})
     .then(students => {results.studentsResults = students})
     .then(() => APIManager.connectToData({dataSet: 'instructors', fetchType: 'GET', embedItem: `?q=${this.state.jsonQuery}`}))
-    .then(instructors => {results.instructorssResults = instructors})
+    .then(instructors => {results.instructorsResults = instructors})
     .then(() => APIManager.connectToData({dataSet: 'cohorts', fetchType: 'GET', embedItem: `?q=${this.state.jsonQuery}`}))
     .then(cohorts => {results.cohortsResults = cohorts})
     .then(() => APIManager.connectToData({dataSet: 'exercises', fetchType: 'GET', embedItem: `?q=${this.state.jsonQuery}`}))

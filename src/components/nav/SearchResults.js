@@ -15,8 +15,8 @@ export default class SearchResults extends Component {
         {
         this.props.results.studentsResults.map(student =>
           <div key={student.id}>
-            {'Name:  '}{student.FirstName} {student.LastName} <br />
-            {'Slack Handle:  '}{student.SlackHandle}
+            {'Name:  '}{student.firstName} {student.lastName} <br />
+            {'Slack Handle:  '}{student.slackHandle}
           </div>
           )
         }
@@ -28,10 +28,10 @@ export default class SearchResults extends Component {
       <div className="instructorsResults" style={{border:'1px', borderColor: 'black', padding: '5px'}}>
       <h3>MATCHING INSTRUCTORS</h3>
         {
-        this.props.results.instructorResults.map(instructor =>
+        this.props.results.instructorsResults.map(instructor =>
           <div key={instructor.id}>
-            {'Name:  '}{instructor.FirstName} {instructor.LastName} <br />
-            {'Slack Handle:  '}{instructor.SlackHandle}
+            {'Name:  '}{instructor.firstName} {instructor.lastName} <br />
+            {'Slack Handle:  '}{instructor.slackHandle}
           </div>
           )
         }
@@ -45,8 +45,8 @@ export default class SearchResults extends Component {
         {
         this.props.results.exercisesResults.map(exercise =>
           <div key={exercise.id}>
-            {'Exercise Name:  '}{exercise.ExerciseName}<br />
-            {'Exercise Language:  '}{exercise.ExerciseLanguage}
+            {'Exercise Name:  '}{exercise.exerciseName}<br />
+            {'Exercise Language:  '}{exercise.exerciseLanguage}
           </div>
           )
         }
@@ -60,7 +60,7 @@ export default class SearchResults extends Component {
         {
         this.props.results.cohortsResults.map(cohort =>
           <div key={cohort.id}>
-            {`Cohort Name: `}{cohort.CohortName}
+            {`Cohort Name: `}{cohort.cohortName}
           </div>
           )
         }

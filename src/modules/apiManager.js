@@ -1,6 +1,6 @@
 const remoteURL = "http://localhost:5000/api"
 
-// "http://localhost:5000/api/students"
+// "http://localhost:5000/api/students?q=rus"
 
 export default {
 
